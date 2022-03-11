@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box; /* for Safari */
-  -moz-box-sizing: border-box; /* for Firefox */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 body {
@@ -52,7 +52,6 @@ code {
       align-items: center;
       padding: 10px;
       border: 2px solid rgba(0, 122, 165, 0.6);
-      //border: 1px solid rgb(152, 152, 152);
     }
     #container-editor,
     #container-previewer {
@@ -132,7 +131,7 @@ code {
   }
   footer {
     a {
-      display: inline-block; //necessary for '&:hover' to work
+      display: inline-block;
       padding: 20px;
       color: #eeebd9;
       font-size: 0.9rem;
