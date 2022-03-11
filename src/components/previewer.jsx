@@ -4,12 +4,6 @@ import { marked } from "marked";
 
 marked.setOptions({
   renderer: new marked.Renderer(),
-  //highlight: function (code, lang) {
-  //  const hljs = require("highlight.js");
-  //  const language = hljs.getLanguage(lang) ? lang : "plaintext";
-  //  return hljs.highlight(code, { language }).value;
-  //},
-  //langPrefix: "hljs language-", // highlight.js css expects a top-level 'hljs' class.
   highlight: function (code) {
     const hljs = require("highlight.js");
     return hljs.highlightAuto(code).value;
