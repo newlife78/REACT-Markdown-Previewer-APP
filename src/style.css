@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* for Safari */
+  -moz-box-sizing: border-box;
+  /* for Firefox */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* App component */
+#container-app {
+  background: rgba(7, 159, 214, 0.65);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #eeebd9;
+}
+
+#container-app #main-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding: 20px;
+}
+
+#container-app #container-markdown {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container-app #container-markdown #container-editor,
+#container-app #container-markdown #container-previewer,
+#container-app #container-markdown #editorMaximized,
+#container-app #container-markdown #previewerMaximized {
+  background-color: #003366;
+  opacity: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border: 2px solid rgba(0, 122, 165, 0.6);
+}
+
+#container-app #container-markdown #container-editor,
+#container-app #container-markdown #container-previewer {
+  width: 38rem;
+  height: 30rem;
+}
+
+#container-app #container-markdown #editorMaximized,
+#container-app #container-markdown #previewerMaximized {
+  width: 76rem;
+  height: 30rem;
+}
+
+#container-app #container-markdown #editorHide,
+#container-app #container-markdown #previewerHide {
+  display: none;
+}
+
+#container-app #container-markdown .sub-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-bottom: 1px solid #989898;
+}
+
+#container-app #container-markdown .sub-title #maximizer-editorIcon,
+#container-app #container-markdown .sub-title #maximizer-previewIcon {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: auto;
+  padding-right: 0;
+  font-size: 0.8rem;
+}
+
+#container-app #container-markdown .sub-title #maximizer-editorIcon:hover,
+#container-app #container-markdown .sub-title #maximizer-previewIcon:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+#container-app #container-markdown #editor,
+#container-app #container-markdown #preview {
+  width: 90%;
+  height: 90%;
+  margin: 15px;
+  padding: 5px;
+  overflow: auto;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+#container-app #container-markdown #container-tips {
+  padding: 2px;
+  font-size: 0.85rem;
+}
+
+#container-app #container-markdown #preview blockquote {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-left: 3px solid rgba(0, 122, 165, 0.6);
+  margin-left: 20px;
+  padding: 5px;
+}
+
+#container-app #container-markdown #preview code {
+  background-color: #fff;
+  display: block;
+  overflow: auto;
+  padding: 5px 10px;
+  border: none;
+  font-weight: 600;
+}
+
+#container-app #container-markdown #preview td,
+#container-app #container-markdown #preview th {
+  border: 1px solid #fff;
+  padding: 5px;
+}
+
+#container-app #container-markdown #preview img {
+  display: inline-block;
+  max-width: 75%;
+}
+
+#container-app footer a {
+  display: inline-block;
+  padding: 20px;
+  color: #eeebd9;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+#container-app footer a:hover {
+  color: #f3e4b4;
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* for Safari */
+  -moz-box-sizing: border-box; /* for Firefox */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* App component */
+#container-app {
+  background: rgba(7, 159, 214, 0.65);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #eeebd9;
+  #main-title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding: 20px;
+  }
+  #container-markdown {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    #container-editor,
+    #container-previewer,
+    #editorMaximized,
+    #previewerMaximized {
+      background-color: #003366;
+      opacity: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px;
+      border: 2px solid rgba(0, 122, 165, 0.6);
+      //border: 1px solid rgb(152, 152, 152);
+    }
+    #container-editor,
+    #container-previewer {
+      width: 38rem;
+      height: 30rem;
+    }
+    #editorMaximized,
+    #previewerMaximized {
+      width: 76rem;
+      height: 30rem;
+    }
+    #editorHide,
+    #previewerHide {
+      display: none;
+    }
+    .sub-title {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-size: 1.4rem;
+      font-weight: 400;
+      border-bottom: 1px solid rgb(152, 152, 152);
+      #maximizer-editorIcon,
+      #maximizer-previewIcon {
+        align-self: flex-start;
+        margin-left: auto;
+        padding-right: 0;
+        font-size: 0.8rem;
+        &:hover {
+          opacity: 50%;
+          cursor: pointer;
+        }
+      }
+    }
+    #editor,
+    #preview {
+      width: 90%;
+      height: 90%;
+      margin: 15px;
+      padding: 5px;
+      overflow: auto;
+      font-size: 0.9rem;
+      font-weight: 200;
+    }
+    #container-tips {
+      padding: 2px;
+      font-size: 0.85rem;
+    }
+    //Markdown styles
+    #preview {
+      blockquote {
+        display: block;
+        align-self: center;
+        border-left: 3px solid rgba(0, 122, 165, 0.6);
+        margin-left: 20px;
+        padding: 5px;
+      }
+      code {
+        background-color: #fff;
+        display: block;
+        overflow: auto;
+        padding: 5px 10px;
+        border: none;
+        font-weight: 600;
+      }
+      td,
+      th {
+        border: 1px solid #fff;
+        padding: 5px;
+      }
+      img {
+        display: inline-block;
+        max-width: 75%;
+      }
+    }
+  }
+  footer {
+    a {
+      display: inline-block; //necessary for '&:hover' to work
+      padding: 20px;
+      color: #eeebd9;
+      font-size: 0.9rem;
+      font-style: italic;
+      text-decoration: none;
+      transition: transform 0.5s ease-in-out;
+      &:hover {
+        color: #f3e4b4;
+        transform: translateY(0.5rem);
+      }
+    }
+  }
+}
