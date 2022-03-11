@@ -1,20 +1,3 @@
-// NPM packages:
-// npm install react-markdown
-// npm install highlight.js
-
-// Extensions:
-// Live Sass Compiler
-
-// Marked.JS official links:
-// 'Marked.JS': https://marked.js.org/
-// 'Advence Marked.JS': https://marked.js.org/using_advanced
-
-// Reactjs.org: https://reactjs.org/docs/dom-elements.html
-
-// Highlightjs official site:
-// 'Highlightjs.org': https://highlightjs.org/download/
-// 'Highlightjs.org USAGE': https://highlightjs.org/usage/
-
 import React, { Component } from "react";
 import Editor from "./components/editor";
 import Previewer from "./components/previewer";
